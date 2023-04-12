@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SnepApplication</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_product_location_map">ProductLocationMapActivity</string>
+    <string name="title_activity_product_detailes_location_map">ProductDetailesLocationMapActivity
+    </string>
+    <string name="title_activity_product_maps">ProductMapsActivity</string>
+</resources>

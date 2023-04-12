@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "477783855406",
+    "project_id": "snepapplication",
+    "storage_bucket": "snepapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477783855406:android:55ccb2b22dd7dd22132abf",
+        "android_client_info": {
+          "package_name": "com.example.snepapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477783855406-37k12vf4mt3u9g46b6u3pg59j82h32cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCboEGKEh5Y4PJShft2zM5hwpa97cVeTJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477783855406-37k12vf4mt3u9g46b6u3pg59j82h32cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

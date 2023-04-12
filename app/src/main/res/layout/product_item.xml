@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:outlineAmbientShadowColor="#eee"
+        app:cardUseCompatPadding="true"
+        android:padding="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/proImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/proName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="name"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/proImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/proRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text="rate"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/proName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/proDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="17dp"
+                android:text="describtion"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/proImage"
+                app:layout_constraintTop_toBottomOf="@+id/proLocation" />
+
+            <TextView
+                android:id="@+id/proLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="17dp"
+                android:text="location"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/proImage"
+                app:layout_constraintTop_toBottomOf="@+id/proName" />
+
+            <TextView
+                android:id="@+id/proPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="price"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/proRate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/proRate"
+                app:layout_constraintTop_toBottomOf="@+id/proRate" />
+
+            <ImageButton
+                android:id="@+id/proDeleteBtn"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:background="#6AFFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/proImage"
+                app:layout_constraintEnd_toEndOf="@+id/proImage"
+                app:srcCompat="@drawable/ic_delete"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/proUpdatebtn"
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                android:background="#66FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/proImage"
+                app:layout_constraintTop_toTopOf="@+id/proImage"
+                app:srcCompat="@drawable/ic_update"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/proitcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="4dp"
+                android:text="category"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/proDeleteBtn"
+                app:layout_constraintTop_toBottomOf="@+id/proDescription"
+                app:layout_constraintVertical_bias="0.2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

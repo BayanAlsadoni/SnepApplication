@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsUserProductActivity">
+
+    <ImageView
+        android:id="@+id/userProImg"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/userProName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
+        android:background="#FFFFFF"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/userProImg"
+        app:layout_constraintTop_toBottomOf="@+id/userProImg" />
+
+    <TextView
+        android:id="@+id/userProRaite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/userProName"
+        app:layout_constraintTop_toBottomOf="@+id/userProName" />
+
+    <TextView
+        android:id="@+id/userProPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/userProRaite"
+        app:layout_constraintTop_toBottomOf="@+id/userProRaite" />
+
+    <TextView
+        android:id="@+id/userProLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/userProPrice"
+        app:layout_constraintTop_toBottomOf="@+id/userProPrice" />
+
+    <TextView
+        android:id="@+id/userProDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/userProLocation"
+        app:layout_constraintTop_toBottomOf="@+id/userProLocation" />
+
+    <TextView
+        android:id="@+id/userprodcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#7C435D"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/userProDescription"
+        app:layout_constraintTop_toBottomOf="@+id/userProDescription" />
+
+    <Button
+        android:id="@+id/shopbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#DB92B2"
+        android:text="shop"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="40dp"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProImg" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="25dp"
+        android:text="Raute"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="25dp"
+        android:text="Price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="25dp"
+        android:text="Location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="25dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="19dp"
+        android:text="category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/pathlocation"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#00ECECEC"
+        app:layout_constraintBottom_toBottomOf="@+id/userProLocation"
+        app:layout_constraintStart_toEndOf="@+id/userProLocation"
+        app:layout_constraintTop_toTopOf="@+id/userProLocation"
+        app:srcCompat="@drawable/ic_add_location" />
+</androidx.constraintlayout.widget.ConstraintLayout>
